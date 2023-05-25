@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 14px;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+   max-width: 400px;
+}
+
+.container .img img{
+    border-radius: 20px 20px 0 0;
+}
+.container .text{
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .text h1{
+    font-weight: 900;
+    font-size: 22px;
+    color: hsl(223, 47%, 23%);
+}
+
+.container .text p{
+    text-align: center;
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+    padding: 10px 11px;
+    font-weight: 400;
+}
+
+.container .text .plan{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 15px;
+    border-radius: 10px;
+}
+.container .text .plan .prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+    border-radius: 10px;
+}
+
+.container .text .plan .prices img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.container .text .plan .prices .prices-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.container .text .plan .prices .prices-item h2{
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.container .text .plan .prices .prices-item .prices-cost{
+    color: hsl(224, 23%, 55%);
+}
+
+.container .text .plan .change{
+    color:hsl(245, 75%, 52%);
+    font-weight: 900;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+button{
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin: 22px 0px;
+    padding: 15px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+}
+.cancel{
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.attribution{
+    margin-top: 10px;
+}
