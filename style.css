@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
-body{
+body {
     font-family: 'Red Hat Display', sans-serif;
     padding: 15px;
     display: flex;
@@ -15,46 +15,54 @@ body{
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     margin: 0;
     padding: 0;
 }
-img{
+
+img {
     display: block;
     width: 100%;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
     border-radius: 20px;
-   max-width: 400px;
+    max-width: 400px;
 }
 
-.container .img img{
+.container .img img {
     border-radius: 20px 20px 0 0;
 }
-.container .text{
+
+.container .text {
     padding: 25px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.container .text h1{
+
+.container .text h1 {
     font-weight: 900;
     font-size: 22px;
     color: hsl(223, 47%, 23%);
 }
 
-.container .text p{
+.container .text p {
     text-align: center;
     font-size: 15px;
     color: hsl(224, 23%, 55%);
@@ -62,7 +70,7 @@ img{
     font-weight: 400;
 }
 
-.container .text .plan{
+.container .text .plan {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -71,7 +79,8 @@ img{
     padding: 15px;
     border-radius: 10px;
 }
-.container .text .plan .prices{
+
+.container .text .plan .prices {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -81,35 +90,41 @@ img{
     border-radius: 10px;
 }
 
-.container .text .plan .prices img{
+.container .text .plan .prices img {
     display: inline-block;
     width: 40px;
     height: 40px;
 }
-.container .text .plan .prices .prices-item{
+
+.container .text .plan .prices .prices-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+
 }
-.container .text .plan .prices .prices-item h2{
+
+.container .text .plan .prices .prices-item h2 {
     font-size: 14px;
     color: hsl(223, 47%, 23%);
     font-weight: 900;
 }
 
-.container .text .plan .prices .prices-item .prices-cost{
+.container .text .plan .prices .prices-item .prices-cost {
     color: hsl(224, 23%, 55%);
 }
 
-.container .text .plan .change{
-    color:hsl(245, 75%, 52%);
+.container .text .plan .change {
+    color: hsl(245, 75%, 52%);
     font-weight: 900;
     font-size: 13px;
     text-decoration: underline;
+    cursor: pointer;
+}
+.container .text .plan .change:hover{
+    text-decoration: none;
 }
 
-button{
+button {
     text-decoration: none;
     border: none;
     background: transparent;
@@ -123,13 +138,30 @@ button{
     font-weight: 700;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.1s, transform 0.1s;
 }
-.cancel{
+
+button:hover {
+    background-color: hsla(245, 75%, 52%, 70%);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.cancel {
     font-size: 14px;
     color: hsl(224, 23%, 55%);
     font-weight: 700;
+    cursor: pointer;
 }
 
-.attribution{
+.cancel:hover {
+    color: black;
+}
+
+.attribution {
     margin-top: 10px;
 }
